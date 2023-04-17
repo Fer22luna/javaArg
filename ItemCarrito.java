@@ -14,7 +14,9 @@ public class ItemCarrito {
 		return cantidad;
 	}
 	
-
+	public Producto getProduct() {
+		return product;
+	}
 	
 	public double  getTotalProductQuantity() {
 		return product.getProductPrice()*cantidad;

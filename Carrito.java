@@ -30,9 +30,19 @@ public class Carrito {
 			precioFinal = descuentoPorcentual.getTotalConDescuento(precioFinal);
 		}
 		return precioFinal;
-		
-		
+			
 	}
+	
+	public void mostrarCarrito() {
+	    for(ItemCarrito item : items) {
+	        System.out.println("Producto: " + item.getProduct().getProduct() + 
+	                           ", Precio unitario: " + item.getProduct().getProductPrice() + 
+	                           ", Cantidad: " + item.getCantidad() + 
+	                           ", Precio total: " + item.getTotalProductQuantity());
+	    }
+	}
+	
+	
 	
 	
 }

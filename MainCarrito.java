@@ -20,10 +20,7 @@ public class MainCarrito {
 			allProducts[i] = new Producto(nombre,precio);
 		}
 		
-		for(int i=0; i<3; i++) {
-			
-			System.out.println(allProducts[i].getProduct() + "   " + allProducts[i].getProductPrice());
-		}
+	
 		
 		Carrito carrito = new Carrito();
 		
@@ -57,7 +54,7 @@ public class MainCarrito {
 		
 	
 	
-		
+		carrito.mostrarCarrito();
 		
 
 		

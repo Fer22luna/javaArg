@@ -35,8 +35,8 @@ public class Carrito {
 	
 	public void mostrarCarrito() {
 	    for(ItemCarrito item : items) {
-	        System.out.println("Producto: " + item.getProduct().getProduct() + 
-	                           ", Precio unitario: " + item.getProduct().getProductPrice() + 
+	        System.out.println("Producto: " + item.getProduct() + 
+	                           ", Precio unitario: " + item.getProductPrice() + 
 	                           ", Cantidad: " + item.getCantidad() + 
 	                           ", Precio total: " + item.getTotalProductQuantity());
 	    }

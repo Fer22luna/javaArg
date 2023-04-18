@@ -27,7 +27,7 @@ public class MainCarrito {
 		for (int i=0; i<3; i++) {
 		System.out.println("Ingrese la cantidad del producto: " + allProducts[i].getProduct());
 		int cantidad = input.nextInt();
-		ItemCarrito item = new ItemCarrito(allProducts[i], cantidad);
+		ItemCarrito item = new ItemCarrito(allProducts[i].getProduct(),allProducts[i].getProductPrice(), cantidad);
 		carrito.addItem(item);
 		System.out.println("El producto : "+  allProducts[i].getProduct() + "  Con el precio unitario  " + allProducts[i].getProductPrice() + " y la cantidad  " + item.getCantidad());
 	
